@@ -25,12 +25,13 @@ def dfs(v):
 
 
 V, E = map(int, input().split())
-N = V + 1
+N = V + 1       # 노드가 0~6까지 있으니까 7개이다.
 adjList = [[] for _ in range(N)]
 for _ in range(E):
     a, b = map(int, input().split())
     adjList[a].append(b)    # 0과 1이 서로 연결되어 있으면 (0, 1) (1, 0)등 양방향을 고려해서 생성해줘야함
     adjList[b].append(a)
+print(adjList)
 visited = [0] * N
 
 dfs(0)
