@@ -21,7 +21,7 @@ def dfs(v):
     for w in adjList[v]:
         if visited[w] == 0:     # 방문하지 않은 w니까 이동한다.
             dfs(w)              # 바로 이동하고 만약 갈 수 있는 곳이 없는 지점까지 가면 재귀로 돌아가면서 stack에서 새로운 w를 찾는 것처럼 동일한
-
+                                # for 문에서 할 게 없을 때는 return 하면서 돌아간다.
 
 
 V, E = map(int, input().split())
