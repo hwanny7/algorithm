@@ -32,3 +32,8 @@ for t in range(10):
         adjlist[nums[i-1]].append(nums[i])
 
     print(f'#{T}', dfs(0, 99))
+
+'''
+
+
+'''
