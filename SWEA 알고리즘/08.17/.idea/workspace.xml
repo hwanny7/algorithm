@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96804abf-514a-4401-9524-292d8b7c574b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/실습_fibo_dp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Discord.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Discord.lnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08.10/swea_달팽이 숫자.py" beforeDir="false" afterPath="$PROJECT_DIR$/../08.10/swea_달팽이 숫자.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Webex.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Webex.lnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../home work" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hws" beforeDir="false" afterPath="$PROJECT_DIR$/../../hws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python_월말평가_예시.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../교수님 문제 풀이.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/input (26).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/min_max.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/간단한 소인수분해.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/구간합.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/삼성시의 버스 노선.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/숫자카드.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/전기버스.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/현주의 상자 바꾸기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/델타 2차배열 탐색.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/메모.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/백준 1920번(이진검색).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/부분 수열의 합.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/부분집합 생성하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/이진 검색.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/전치행렬.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6009.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6010.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6011.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6019.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6020.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6023.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6027.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6028.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6029.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6033.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6042.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6043.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6046.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6053.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6056.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6077.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6078.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6079.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6080.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6081.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6082.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6083.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6086.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../코드업/6087.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../파이썬 기초.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2DSeLohYyIoDnIuI1H8rOYmrJ6i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.SWEA_ 반복문자 지우기">
+    <configuration name="이항계수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이항계수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_ 반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_ 반복문자 지우기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_파스칼의 삼각형" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_파스칼의 삼각형.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_괄호검사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_괄호검사.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_스택_제로" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_스택_제로.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.SWEA_ 반복문자 지우기" />
+        <item itemvalue="Python.SWEA_괄호검사" />
+        <item itemvalue="Python.이항계수" />
+        <item itemvalue="Python.SWEA_스택_제로" />
+        <item itemvalue="Python.SWEA_파스칼의 삼각형" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96804abf-514a-4401-9524-292d8b7c574b" name="Default Changelist" comment="" />
+      <created>1660696864445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660696864445</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SWEA_파스칼의 삼각형.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SWEA_스택_제로.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SWEA_괄호검사.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
