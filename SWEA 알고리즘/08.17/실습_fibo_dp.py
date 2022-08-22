@@ -7,7 +7,7 @@ def fibo_dp(n):
     return
 
 
-table = [0]*101
+table = [0] * 101
 
 fibo_dp(17)
 print(table)
