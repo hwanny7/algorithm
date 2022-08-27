@@ -1,8 +1,8 @@
-# import sys
-#
-# W, H = map(int, sys.stdin.readline().split())
-# r, c = map(int, sys.stdin.readline().split())
-# t = int(sys.stdin.readline())
+import sys
+
+W, H = map(int, sys.stdin.readline().split())
+r, c = map(int, sys.stdin.readline().split())
+t = int(sys.stdin.readline())
 
 
 
