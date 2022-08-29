@@ -10,6 +10,8 @@ def bfs(C, R):
             nr = r + dr[i]
             if 0 <= nc < N and 0 <= nr < M and visited[nc][nr] == 0 and arr[nc][nr] == 1:
                 queue.append([nc, nr])
+                visited[nc][nr] = 1
+                lst.append([nc, nr])
 
 
 
@@ -17,9 +19,11 @@ N, M = map(int, input().split())        #N줄, M개
 
 arr = [list(map(int, input())) for _ in range(N)]
 visited = [[0] * M for _ in range(N)]
-
+lst = []
 ans = []
 for i in range(N):
     for j in range(M):
         if arr[i][j] == 1 and visited[i][j] == 0:
             ans.append(bfs(i, j))
+
+print(sorted(lst))
