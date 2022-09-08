@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+<div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{movie.poster_url}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{movie.poster_url}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{movie.poster_url}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <h5>{{movie.title}}</h5>
+    <p>Audience : {{movie.audience}}</p>
+    <p>Release Dates : {{movie.release_date}}</p>
+    <p>Genre : {{movie.genre}}</p>
+    <p>Score : {{movie.score}}</p>
+    <p>{{movie.description|linebreaks}}</p>
+    <div>
+      <a href="{% url 'movies:edit' movie.pk %}">EDIT</a>
+    </div>
+    <form action='{% url 'movies:delete' movie.pk %}' method = 'POST'>
+      {% csrf_token %}
+      <input type="submit" value = 'DELETE'>
+    </form>
+    <div>
+      <a href="{% url 'movies:index' %}">BACK</a>
+    </div>
+  </div>
+
+{% endblock content %}

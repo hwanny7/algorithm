@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>INDEX</h1>
+  <a href= {% url 'movies:new' %} class = "btn btn-outline-dark" >NEW</a>
+  <hr>
+  <div class="container">
+    <section class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+      {% for movie in movies %}
+      <div class="card" width = 30px>
+        <img src="{{movie.poster_url}}" alt='이미지' class="card-img-top">
+        <div class="card-body">
+        <p class="card-text">
+          <a href="{% url 'movies:detail' movie.pk %}">{{movie.title}}</a>
+          <p>{{movie.score}}</p>
+        </p>
+        </div>
+      </div>
+        <hr>
+      {% endfor %}
+    </section>
+  </div>
+{% endblock content %}
