@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96804abf-514a-4401-9524-292d8b7c574b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/실습_fibo_dp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Discord.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Discord.lnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08.10/swea_달팽이 숫자.py" beforeDir="false" afterPath="$PROJECT_DIR$/../08.10/swea_달팽이 숫자.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Webex.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Webex.lnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../home work" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hws" beforeDir="false" afterPath="$PROJECT_DIR$/../../hws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python_월말평가_예시.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../교수님 문제 풀이.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/flatten.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/input (26).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/min_max.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/간단한 소인수분해.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/구간합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/삼성시의 버스 노선.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/숫자카드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/전기버스.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.09/현주의 상자 바꾸기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/델타 2차배열 탐색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/메모.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/백준 1920번(이진검색).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/부분 수열의 합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/부분집합 생성하기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/이진 검색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../알고리즘 수업/08.10/전치행렬.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6009.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6010.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6011.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6019.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6020.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6023.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6027.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6028.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6029.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6033.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6042.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6043.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6046.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6053.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6056.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6077.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6078.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6079.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6080.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6081.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6082.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6083.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6086.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../코드업/6087.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../파이썬 기초.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../백준/15649_N과 M (1).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../백준/18310_안테나.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08.10/부분집합 생성하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../08.10/부분집합 생성하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../백준/10828_스택.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../백준/10828_스택.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../백준/15649_N과 M (1) 안품.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,27 +57,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SWEA_ 반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="08.17" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_ 반복문자 지우기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="SWEA_파스칼의 삼각형" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="08.17" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,6 +70,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_파스칼의 삼각형.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_ 반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="08.17" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_ 반복문자 지우기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
