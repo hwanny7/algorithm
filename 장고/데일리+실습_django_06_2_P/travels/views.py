@@ -16,11 +16,18 @@ def create(request):
     if request.method == 'POST':
         form = ArticleForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('travels:index')        #detail로 바꿔야함
+            article = form.save()
+            return redirect('travels:detail', article.pk)        #detail로 바꿔야함
     else:
         form = ArticleForm()
     context = {
         'form':form,
     }
     return render(request, 'travels/create.html', context)
+
+def detail(request, pk):
+    article = Article.objects.get(pk=pk)
+    context = {
+        'article' : article
+    }
+    return render(request, 'travels/detail.html', context)

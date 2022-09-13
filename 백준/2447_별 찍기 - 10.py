@@ -1,3 +1,6 @@
-N = int(input())
+def star():
+    if
 
-def star(cnt):
+N = int(input())
+deep = N // 3
+star(1)
