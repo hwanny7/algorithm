@@ -13,4 +13,5 @@ urlpatterns = [
 
     # 게시글 수정
     path('<int:pk>/update/', views.update, name='update'),
+
 ]

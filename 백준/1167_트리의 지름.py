@@ -1,41 +1,39 @@
 import sys
 input = sys.stdin.readline
 
-def dfs(v, before):
+def dfs(V, D):
     global total
-    visited[v] = visited[before] + 1
-    for i in V[v]:
-        if visited[i] == 0:
-            dfs(i, v)
-    temp = []
+    visited[V] = 1
 
-    for i in V[v]:
-        if visited[i] > visited[v]:
-            temp.append(T[v][i])
-    if len(temp) >= 1:
-        temp.append(0)
-        temp.sort(reverse = True)
-        if total < temp[0] + temp[1]:
-            total = temp[0] + temp[1]
-        T[before][v] += temp[0]
+    dis = []
+    for key, value in T[V]:
+        if not visited[key]:
+            dis.append(dfs(key, value))
+
+    if len(dis) == 0:               #끝 노드일 때
+        return D
+    else:
+        dis.sort(reverse = True)
+        dis.append(0)               #자식이 하나밖에 없을수도 있기 때문에 0을 추가
+        if total < dis[0] + dis[1]:
+            total = dis[0] + dis[1]
+        return max(dis) + D         #자식 노드가 있을 때
+
 
 
 N = int(input())
-V = [[] for _ in range(N + 1)]
-T = [[0] * (N + 1) for _ in range(N + 1)]
+T = [[] for _ in range(N + 1)]
 visited = [0] * (N + 1)
+total = 0
 
 for i in range(N):
     arr = list(map(int, input().split()))
-    for j in range(1, len(arr)):
-        if arr[j] == -1:
+    for i in range(1, len(arr), 2):
+        if arr[i] == -1:
             break
-        elif j % 2:
-            V[arr[0]].append(arr[j])
-        else:
-            T[arr[0]][arr[j - 1]] = arr[j]
+        T[arr[0]].append((arr[i], arr[i + 1]))
 
-total = 0
-dfs(1, 1)
+dfs(1, 0)
 print(total)
+
 
