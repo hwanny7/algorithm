@@ -1,6 +1,6 @@
 # global cnt 없이 순회환 정점 수를 리턴하는 함수
 def f(n):
-    if n == 0:
+    if n == 0:              # 자식이 없을 때
         return 0
     else:
         L = f(ch1[n])
@@ -9,13 +9,13 @@ def f(n):
 
 # return을 통해 높이를 리턴하는 함수
 
-def f(n):
+def f(n):                        # 깊이 구하는 법
     if n == 0:
         return -1
     else:
         L = f(ch1[n])
         R = f(ch2[n])
-        return max(L + R) + 1    # 자기 자신을 더해주기
+        return max(L + R) + 1    # 자기 자신을 더해주기, max 를 쓰는 이유는 가장 긴 깊이를 찾아야 하기 때문에
 
 
 # 루트 노드 찾기
