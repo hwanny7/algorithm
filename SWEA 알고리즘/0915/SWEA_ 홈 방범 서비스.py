@@ -1,32 +1,28 @@
-
 for t in range(1, int(input()) + 1):
     N, M = map(int, input().split())
     arr = [list(map(int, input().split())) for _ in range(N)]
 
     home = []
-    total = 0
 
     for i in range(N):
         for j in range(N):
             if arr[i][j] == 1:
                 home.append([i, j])
-                total += 1
 
-    total = 0
-    home_c = 0
+    cnt = 0
     for c in range(N):
         for r in range(N):
             ans = [0] * (N * 2)
-            table = []
+
             for y, x in home:
-                n = abs(c - y) + abs(r - x)
-                table.append(n)
-                ans[n + 1] += 1
+                n = abs(c - y) + abs(r - x) + 1
+                ans[n] += 1
 
-            count = 0
-            for K in range(N * 2):
-                if 0 <= M * ans[K] - K * K + (K - 1) * (K - 1):
-                    count
+            total = 0
+            for K in range(1, N * 2):
+                total += ans[K]
+                L = M * total - (K * K + (K - 1) * (K - 1))
+                if 0 <= L and cnt < total:
+                    cnt = total
 
-
-    print(total)
+    print(f'#{t}', cnt)
