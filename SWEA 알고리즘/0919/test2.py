@@ -94,7 +94,7 @@ for t in range(1, int(input()) + 1):
     for i in range(N):
         N = input().strip().rstrip('0')
         if len(N) and N not in arr:
-            arr.append(N)
+            arr.append(N)          #여기서 2진수로 변환
 
     grand = 0
     for i in range(len(arr)):
