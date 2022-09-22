@@ -1,95 +1,61 @@
 # import sys; sys.stdin = open('input.txt')
 
-def binary(x):
-    if x <= 1:
-        return str(x)
-    return binary(x // 2) + str(x % 2)
+binary = {'0': '0000', '1': '0001', '2': '0010', '3': '0011', '4': '0100', '5': '0101', '6': '0110', '7': '0111',
+          '8': '1000', '9': '1001', 'A': '1010', 'B': '1011', 'C': '1100', 'D': '1101', 'E': '1110', 'F': '1111',
+          }
 
-def convert(x):
-    dic = {'A':10, 'B':11, 'C':12, 'D': 13, 'E':14, 'F':15}
-    if x in dic:
-        return dic[x]
-    return int(x)
-
-
-def verify(sen, num):
-    global grand
-    ans = []
-    for i in range(0, len(sen), num):
-        first = '0'
-        ratio = []
-        total = 0
-        for j in sen[i:i+num] + '0':
-            if j == first:
-                total += 1
-            else:
-                ratio.append(total // (num // 7))
-                total = 1
-                first = j
-            if len(ratio) == 4:
-                for k in range(10):
-                    if ratio == lst[k]:
-                        ans.append(k)
-
-    one = 0
-    two = 0
-
-    if not ans:
-        return
-
-    for i in range(8):
-        if i % 2:
-            one += ans[i]
-            continue
-        two += ans[i]
-
-    if (two * 3 + one) % 10 == 0:
-        grand += sum(ans)
 
 def find(x):
+    global grand
     ans = ''
     for i in x:
-        n = binary(convert(i))
-        ans += '0' * (4 - len(n)) + n
-
-    print(ans)
+        ans += binary[i]
 
     ans = ans.rstrip('0')
-    long = len(ans)
+
+
+    v = []
 
     ratio = []
-    first = '1'
     total = 0
-
-    for i in range(long - 1, -1, -1):
+    first = '1'
+    for i in range(len(ans) - 1, -1, -1):
         if ans[i] == first:
             total += 1
-        elif ans[i] == '0' and len(ans) == 0:
-            continue
-        else:
+        elif len(ratio):
             ratio.append(total)
             total = 1
             first = ans[i]
-        if len(ratio) == 4:
-            total = 0
+        else:
             first = '1'
-            L = long - sum(ratio) * 8
-            if ans[L:long] in humm:
-                ratio = []
-                long = L
-                continue
-            humm.append(ans[L:long])
-            verify(ans[L:long], sum(ratio))
+            total = 0
             ratio = []
-            long = L
+            small = min(ratio)
+            temp = (ratio[2] // small, ratio[1] // small, ratio[0] // small)
+            v.append(lst[temp])
+
+        if len(v) == 8:
+            if v not in V:
+                m = (v[1] + v[3] + v[5] + v[7]) * 3 + v[0] + v[2] + v[4] + v[6]
+                if m % 10 == 0:
+                    grand += sum(v)
+                V.append(v)
+            v = []
+
+
+
+
+
+
+
 
 
 
 for t in range(1, int(input()) + 1):
-    humm = []
-    lst = [[3, 2, 1, 1], [2, 2, 2, 1], [2, 1, 2, 2], [1, 4, 1, 1], [1, 1, 3, 2], [1, 2, 3, 1], [1, 1, 1, 4],
-           [1, 3, 1, 2], [1, 2, 1, 3], [3, 1, 1, 2]]
-    N, M = map(int, input().split()) # N = 세로, M = 가로
+    lst = {(2, 1, 1): 0, (2, 2, 1): 1, (1, 2, 2): 2, (4, 1, 1): 3, (1, 3, 2): 4, (2, 3, 1): 5, (1, 1, 4): 6,
+           (3, 1, 2): 7, (2, 1, 3): 8, (1, 1, 2): 9}
+    N, M = map(int, input().split())  # N = 세로, M = 가로
+    V = []
     arr = []
     for i in range(N):
         N = input().strip().rstrip('0')
@@ -99,4 +65,5 @@ for t in range(1, int(input()) + 1):
     grand = 0
     for i in range(len(arr)):
         find(arr[i])
+
     print(f'#{t}', grand)

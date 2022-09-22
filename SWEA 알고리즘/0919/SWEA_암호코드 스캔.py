@@ -1,127 +1,78 @@
+import sys; sys.stdin = open('input.txt')
+
 def binary(x):
     if x <= 1:
         return str(x)
     return binary(x // 2) + str(x % 2)
+
 def convert(x):
     dic = {'A':10, 'B':11, 'C':12, 'D': 13, 'E':14, 'F':15}
     if x in dic:
         return dic[x]
     return int(x)
 
+
 def find(x):
+    global grand
     ans = ''
     for i in x:
         n = binary(convert(i))
         ans += '0' * (4 - len(n)) + n
 
-    ratio = []
-    first = '1'
-    total = 0
-    for i in ans.rstrip('0')[::-1]:
-        if i == first:
-            total += 1
-        else:
-            ratio.append(total)
-            total = 1
-            first = i
-        if len(ratio) == 4:
-            break
+    ans = ans.rstrip('0')
+    long = len(ans)
+    # print(ans)
 
-    long = len(ans.rstrip('0'))
-    m = verify(ans[long - (sum(ratio) * 8) :long], sum(ratio))
-    print(m)
+    v = []
 
+    while long >= 0:
+        j = 1
+        if ans[long - j] != '1':
+            long -= 1
+            continue
 
-def verify(sen, num):
-    lst = [[3, 2, 1, 1], [2, 2, 2, 1], [2, 1, 2, 2], [1, 4, 1, 1], [1, 1, 3, 2], [1, 2, 3, 1], [1, 1, 1, 4], [1, 3, 1, 2], [1, 2, 1, 3], [3, 1, 1, 2]]
-    ans = []
-    for i in range(0, len(sen), num):
-        first = '0'
         ratio = []
+        first = '1'
         total = 0
-        for j in sen[i:i+num] + '0':
-            if j == first:
+        while len(ratio) != 3:
+            if ans[long - j] == first:
                 total += 1
             else:
                 ratio.append(total)
                 total = 1
-                first = j
-            if len(ratio) == 4:
-                for k in range(10):
-                    if ratio == lst[k]:
-                        ans.append(k)
+                first = ans[long - j]
+            j += 1
 
-    one = 0
-    two = 0
-    for i in range(8):
-        if i % 2:
-            one += ans[i]
-            continue
-        two += ans[i]
+        small = min(ratio)
+        temp = (ratio[2] // small, ratio[1] // small, ratio[0] // small)
 
-    return two * 3 + one
+        v.append(lst[temp])
+        long -= (7 - sum(temp)) * small + sum(ratio)
+
+        if len(v) == 8 and v not in V:
+            m = (v[1] + v[3] + v[5] + v[7]) * 3 + v[0] + v[2] + v[4] + v[6]
+            if m % 10 == 0:
+                grand += sum(v)
+            V.append(v)
+            v = []
+        elif len(v) == 8:
+            v = []
+
 
 
 for t in range(1, int(input()) + 1):
+    lst = {(2, 1, 1):0, (2, 2, 1):1, (1, 2, 2):2, (4, 1, 1):3, (1, 3, 2):4, (2, 3, 1):5, (1, 1, 4):6,
+           (3, 1, 2):7, (2, 1, 3):8, (1, 1, 2):9}
     N, M = map(int, input().split()) # N = 세로, M = 가로
-    arr = [list(input()) for _ in range(N)]
-
+    V = []
+    arr = []
     for i in range(N):
-        for j in range(M -1, -1, -1):
-            if arr[i][j] != '0':
-                find(arr[i][:j + 1])
-                break
+        N = input().strip().rstrip('0')
+        if len(N) and N not in arr:
+            arr.append(N)
 
+    grand = 0
+    for i in range(len(arr)):
+        find(arr[i])
 
-# def find(x):
-#     ans = ''
-#     for i in x:
-#         n = binary(convert(i))
-#         ans += '0' * (4 - len(n)) + n
-#
-#     ratio = []
-#     first = '1'
-#     total = 0
-#     for i in ans.rstrip('0')[::-1]:
-#         if i == first:
-#             total += 1
-#         else:
-#             ratio.append(total)
-#             total = 1
-#             first = i
-#         if len(ratio) == 4:
-#             break
-#
-#     long = len(ans.rstrip('0'))
-#     m = verify(ans[long - (sum(ratio) * 8) :long], sum(ratio))
-#     print(m)
-#
-#
-# def verify(sen, num):
-#     lst = [[3, 2, 1, 1], [2, 2, 2, 1], [2, 1, 2, 2], [1, 4, 1, 1], [1, 1, 3, 2], [1, 2, 3, 1], [1, 1, 1, 4], [1, 3, 1, 2], [1, 2, 1, 3], [3, 1, 1, 2]]
-#     ans = []
-#     for i in range(0, len(sen), num):
-#         first = '0'
-#         ratio = []
-#         total = 0
-#         for j in sen[i:i+num] + '0':
-#             if j == first:
-#                 total += 1
-#             else:
-#                 ratio.append(total)
-#                 total = 1
-#                 first = j
-#             if len(ratio) == 4:
-#                 for k in range(10):
-#                     if ratio == lst[k]:
-#                         ans.append(k)
-#
-#     one = 0
-#     two = 0
-#     for i in range(8):
-#         if i % 2:
-#             one += ans[i]
-#             continue
-#         two += ans[i]
-#
-#     return two * 3 + one
+    print(f'#{t}', grand)
