@@ -1,4 +1,4 @@
-def find(idx, cnt):
+def find(idx, cnt):                             # 59032499 2
     global grand
     if cnt == K or idx == l:
         total = 0
@@ -38,4 +38,4 @@ for tc in range(1, int(input()) + 1):
     grand = 0
     find(0, 0)
 
-    print(f'#{tc}', grand)
+    print(f'#{tc}', grand
