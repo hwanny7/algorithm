@@ -1,4 +1,4 @@
-def find(idx, cnt):
+def find(station, idx, cnt):
     global ans
 
     next = station[idx] + idx
@@ -9,16 +9,16 @@ def find(idx, cnt):
         ans = min(cnt, ans)
         return
 
-    find(next, cnt + 1)
+    find(station, next, cnt + 1)
     for i in range(next - 1, idx, -1):
         if station[i] > station[next]:
-            find(i, cnt + 1)
+            find(station, i, cnt + 1)
 
 for t in range(1, int(input()) + 1):
     station = list(map(int, input().split()))
     N = station[0]
     ans = 101
-    find(1, 0)
+    find(station, 1, 0)
     print(f'#{t}', ans)
 
 

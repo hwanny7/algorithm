@@ -1,11 +1,11 @@
 
-def merge_sort(l, h):
+def merge_sort(arr, l, h):
     global cnt
     if h - l == 1:
         return arr[l:h], 1
     mid = (l + h) // 2
-    l, l_long = merge_sort(l, mid)
-    r, r_long = merge_sort(mid, h)
+    l, l_long = merge_sort(arr, l, mid)
+    r, r_long = merge_sort(arr, mid, h)
 
     if l[l_long - 1] > r[r_long - 1]:
         cnt += 1
@@ -32,5 +32,5 @@ for t in range(1, int(input()) + 1):
     N = int(input())
     arr = list(map(int, input().split()))
     cnt = 0
-    arr , long = merge_sort(0, N)
+    arr, long = merge_sort(arr, 0, N)
     print(f'#{t}', arr[N // 2], cnt)
