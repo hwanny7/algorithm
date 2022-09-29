@@ -17,12 +17,12 @@ def prim1(r, V):
     MST = [0] * (V + 1)          #MST 포함여부
     key = [1000] * (V + 1)      #가중치의 최대값 이상으로 초기화
     key[r] = 0                  #시작정점의 key를 0으로, 이미 포함됐기 때문에 비용이 없다.
-    for _ in range(V):          #V + 1 개의 정점 중 V 개를 선택
+    for _ in range(V):          #V + 1 개의 정점 중 V 개를 선택해서 값을 갱신한다.
         # MST에 포함되지 않은 정점 중(MST[u] == 0), key가 최소인 u 찾기
         u = 0
         minV = 10000
         for i in range(V + 1):
-            if MST[i] == 0 and key[i] < minV:
+            if MST[i] == 0 and key[i] < minV:               # 최소값 찾는 과정을 우선순위 큐로 구현하면 더 빨라진다.
                 u = i
                 minV = key[i]
         #=============== MST에 속해있지 않으면서 key 값이 가장 작은 얘
@@ -31,9 +31,9 @@ def prim1(r, V):
         for v in range(V + 1):
             if MST[v] == 0 and adjM[u][v] > 0:      #MST에 속해있지 않고, 인접해 있으면서(가중치가 있으면 인접해 있는 것임)
                 key[v] = min(key[v], adjM[u][v])
-    print()
-    return sum(key)
+        # 트리에 포함되지 않은 얘 중에서 새로운 간선을 선택하기 때문에 cicle이(루프) 생길 일이 없다.
 
+    return sum(key)
 
 V, E = map(int, input().split())
 adjM = [[0]* (V + 1) for _ in range(V + 1)]
