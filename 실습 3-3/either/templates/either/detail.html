@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+<h3>{{article.title}}</h3>
+<h5>Red TEAM</h5>
+<p>=>{{article.red}}</p>
+<h5>Blue TEAM</h5>
+<p>=>{{article.blue}}</p>
+<hr>
+<a href="{% url 'either:index' %}">BACK</a>
+<hr>
+<form action="{% url 'either:comment_create' article.pk %}"  method = "POST">
+    {% csrf_token %}
+    {{comment_form.as_p}}
+    <input type="submit" value = "작성">
+</form>
+{% if comments %}
+<hr>
+<h3>댓글 목록</h3>
+{% for comment in comments %}
+<li>{{comment.content}}</li>
+{% endfor %}
+{% endif %}
+{% endblock content %}
+
+
