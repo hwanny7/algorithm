@@ -31,3 +31,6 @@ else:
             print(i, end=' ')
     else:
         print(-1)
+
+# print(int('000', 2)^int('000', 2))
+# print(16 & 15)

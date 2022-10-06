@@ -16,10 +16,10 @@ def dik():
 
         for j in range(N):
             if U[j] == 0:
-                D[j] = min(D[j], ((path_1[idx] - path_1[j]) ** 2 + (path_2[idx] - path_2[j]) ** 2) *tax)
+                D[j] = min(D[j], (path_1[idx] - path_1[j]) ** 2 + (path_2[idx] - path_2[j]) ** 2)
 
 
-    print(f'#{t}', round(sum(D)))
+    print(f'#{t}', round(sum(D) * tax))
 
 for t in range(1, int(input()) + 1):
     N = int(input())
