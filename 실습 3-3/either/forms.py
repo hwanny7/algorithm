@@ -7,15 +7,16 @@ team = (
     (False, 'BLUE TEAM'),
 )
 
-class ArticleForm(forms.ModelForm):
-
-    class Meta:
-        model = Article
-        fields = '__all__'
-
 class CommentForm(forms.ModelForm):
     pick = forms.ChoiceField(widget = forms.Select(), choices = team)
 
     class Meta:
         model = Comment
         exclude = ('article',)
+
+        
+class ArticleForm(forms.ModelForm):
+
+    class Meta:
+        model = Article
+        fields = '__all__'

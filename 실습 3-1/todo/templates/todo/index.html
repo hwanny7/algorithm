@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h6>TODO</h6>
+<a href="{% url 'todo:create' %}">CREATE</a>
+<hr>
+{% for article in articles  %}
+    {% if request.user == article.author %}
+    <li>{{article.author}} - {{ article.title }}</li>
+    <form action="{% url 'todo:verify' article.pk %} " method = "POST">
+        {% csrf_token %}
+        {% if article.completed %}
+        <input type="submit" value = "취소하기">
+        {% else %}
+        <input type="submit" value = "완료하기">
+        {% endif %}
+    </form>
+    <form action="{% url 'todo:delete' article.pk %} " method = "POST">
+        {% csrf_token %}
+        <input type="submit" value = "삭제하기">
+    </form>
+    {% endif %}
+{% empty %}
+    <p>작성된 글이 없습니다.</p>
+{% endfor %}
+{% endblock content %}
