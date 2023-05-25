@@ -36,7 +36,7 @@ key = deque()
 for i in range(N):
     for j in range(N):
         if arr[i][j] and visit[i][j]:
-            find(i, j)`
+            find(i, j)
 
 visit = [[0] * N  for _ in range(N)]
 ans = 0xffffffffffffff
