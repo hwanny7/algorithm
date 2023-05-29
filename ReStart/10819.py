@@ -5,10 +5,9 @@ def find(i, k):
     global ans
     if i == k:
         total = 0
-        for t in range(k):
-            if t % 2:
-                total += abs(newArr[t - 1] - newArr[t])
-        print(total)
+        for i in range(k - 1):
+            total += abs(newArr[i] - newArr[i + 1])
+        ans = max(ans, total)
         return
 
     for j in range(N):
