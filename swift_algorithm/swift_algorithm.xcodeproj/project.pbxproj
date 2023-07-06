@@ -37,6 +37,7 @@
 		AED326882A42CFC100328532 /* 홀수 vs 짝수.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED326872A42CFC100328532 /* 홀수 vs 짝수.swift */; };
 		AED3268A2A42DCCB00328532 /* 왼쪽 오른쪽.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED326892A42DCCB00328532 /* 왼쪽 오른쪽.swift */; };
 		AEF46C072A56ACD10010D3C5 /* 수박.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF46C062A56ACD10010D3C5 /* 수박.swift */; };
+		AEF46C092A56D2AB0010D3C5 /* 시저 암호.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +84,7 @@
 		AED326872A42CFC100328532 /* 홀수 vs 짝수.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "홀수 vs 짝수.swift"; sourceTree = "<group>"; };
 		AED326892A42DCCB00328532 /* 왼쪽 오른쪽.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "왼쪽 오른쪽.swift"; sourceTree = "<group>"; };
 		AEF46C062A56ACD10010D3C5 /* 수박.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "수박.swift"; sourceTree = "<group>"; };
+		AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "시저 암호.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				AEB7C9612A52F7F300021A9C /* 달리기 경주.swift */,
 				AEB7C9632A53F3EF00021A9C /* 햄버거 만들기.swift */,
 				AEF46C062A56ACD10010D3C5 /* 수박.swift */,
+				AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */,
 			);
 			path = swift_algorithm;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				AED326842A41F1CA00328532 /* 세로 읽기.swift in Sources */,
 				AE1DA6292A5105BE00BED959 /* 과일 장수.swift in Sources */,
 				AE7BEBA12A4C70BC00310CC4 /* 두 개 뽑아서 더하기.swift in Sources */,
+				AEF46C092A56D2AB0010D3C5 /* 시저 암호.swift in Sources */,
 				AE84A5E52A414E9A00566499 /* 주사위 게임 3.swift in Sources */,
 				AE0850C42A4FA76A005B1E0A /* binarygap.swift in Sources */,
 				AE84A5D52A41321E00566499 /* 배열조각.swift in Sources */,
