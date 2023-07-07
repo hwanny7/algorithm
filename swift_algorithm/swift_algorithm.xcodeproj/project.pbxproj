@@ -38,6 +38,7 @@
 		AED3268A2A42DCCB00328532 /* 왼쪽 오른쪽.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED326892A42DCCB00328532 /* 왼쪽 오른쪽.swift */; };
 		AEF46C072A56ACD10010D3C5 /* 수박.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF46C062A56ACD10010D3C5 /* 수박.swift */; };
 		AEF46C092A56D2AB0010D3C5 /* 시저 암호.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */; };
+		AEF46C0B2A5839E60010D3C5 /* 둘만의 암호.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF46C0A2A5839E60010D3C5 /* 둘만의 암호.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +86,7 @@
 		AED326892A42DCCB00328532 /* 왼쪽 오른쪽.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "왼쪽 오른쪽.swift"; sourceTree = "<group>"; };
 		AEF46C062A56ACD10010D3C5 /* 수박.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "수박.swift"; sourceTree = "<group>"; };
 		AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "시저 암호.swift"; sourceTree = "<group>"; };
+		AEF46C0A2A5839E60010D3C5 /* 둘만의 암호.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "둘만의 암호.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				AEB7C9632A53F3EF00021A9C /* 햄버거 만들기.swift */,
 				AEF46C062A56ACD10010D3C5 /* 수박.swift */,
 				AEF46C082A56D2AB0010D3C5 /* 시저 암호.swift */,
+				AEF46C0A2A5839E60010D3C5 /* 둘만의 암호.swift */,
 			);
 			path = swift_algorithm;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				AE84A5D52A41321E00566499 /* 배열조각.swift in Sources */,
 				AED3268A2A42DCCB00328532 /* 왼쪽 오른쪽.swift in Sources */,
 				AE7BEB9F2A4C6F5D00310CC4 /* 음양 더하기.swift in Sources */,
+				AEF46C0B2A5839E60010D3C5 /* 둘만의 암호.swift in Sources */,
 				AE0850C82A504306005B1E0A /* 예산.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
